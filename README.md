@@ -29,3 +29,11 @@ Send a POST request to `/v1/food-adverse-events/query`:
   "query": "Are there FDA reports of people getting sick after eating corn chips?"
 }
 ```
+
+## Docker
+
+Build and run with Docker:
+```bash
+docker build -t fda-agent .
+docker run -p 8000:8000 --env-file .env fda-agent
+```
